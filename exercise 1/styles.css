@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: ltr;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    background: #fff;
+}
+
+header {
+    background-color: #000;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    border: 2px solid #000;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+main {
+    display: flex;
+    margin-top: 0;
+}
+
+.left-column {
+    width: 30%;
+    background-color: #f5deb3;
+    padding: 20px;
+    border-radius: 0;
+    margin-left: 0;
+}
+
+.right-column {
+    width: 70%;
+    padding: 20px;
+    background-color: #fff;
+    padding: 1cm;
+}
+
+/* استایل برای دایره‌های دور آیکون‌ها */
+.icon {
+    width: 30px; /* اندازه دایره */
+    height: 30px; /* اندازه دایره */
+    border-radius: 50%; /* دایره بودن */
+    background-color: #000; /* رنگ پس‌زمینه دایره */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px; /* فاصله بین دایره و متن */
+    display: inline-flex; /* برای نمایش در کنار هم */
+}
+
+/* تغییر اندازه و رنگ آیکون */
+.icon i {
+    color: #fff; /* رنگ آیکون */
+    font-size: 16px; /* اندازه آیکون */
+}
+
+.contact-details div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* فاصله بین هر آیکون و متن */
+}
+
+/* خطوط زیر فقط برای Summary، Work Experience و References */
+h2.with-line {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    display: inline-block;
+    width: 100%;
+    border-bottom: 2px solid #000; /* خط زیر عنوان */
+    padding-bottom: 5px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+/* استایل برای ایجاد نقطه و خط عمودی در education */
+.education-item {
+    position: relative;
+    font-weight: bold;
+    margin-left: 20px;
+    padding-left: 20px; /* تنظیم فضای مورد نیاز برای نقطه و خط */
+}
+
+.dot-line::before {
+    content: "•"; /* نقطه */
+    font-size: 24px; /* اندازه نقطه */
+    position: absolute;
+    left: -20px; /* محل نقطه نسبت به متن */
+    top: 0;
+}
+
+.dot-line::after {
+    content: "";
+    position: absolute;
+    left: -18px; /* فاصله خط عمودی از نقطه */
+    top: 24px; /* محل شروع خط عمودی زیر نقطه */
+    width: 1px; /* ضخامت خط عمودی */
+    height: 20px; /* ارتفاع خط عمودی (تقریباً دو سانتی‌متر) */
+    background-color: black; /* رنگ خط عمودی */
+}
